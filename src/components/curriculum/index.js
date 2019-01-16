@@ -5,7 +5,6 @@ import Otras2 from '../../assets/otras_2.jpg';
 import Otras3 from '../../assets/otras_3.jpg';
 
 const Curriculum = props => {
-
   return (
     <Fragment>
       <h1>Curriculum</h1>

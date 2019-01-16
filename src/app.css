@@ -1,7 +1,14 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
+  padding: 0;
   text-align: center;
   background-image: url(/bg.jpg);
   font-family: 'Playfair Display', serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
   margin: 20px;
   line-height: 30px;
 }
@@ -67,4 +74,18 @@ blockquote span {
   font-style: normal;
   font-weight: bold;
   margin-top: 1em;
+}
+
+.scroll-btn {
+  position: fixed;
+  z-index: 1;
+  bottom: 50px;
+  right: 50px;
+  display: block;
+  background: url(/scroll.png) no-repeat;
+  width: 37px;
+  height: 26px;
+  outline: none;
+  border: none;
+  cursor: pointer;
 }
