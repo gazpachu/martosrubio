@@ -36,6 +36,11 @@ body {
   padding: 0 4px;
 }
 
+section {
+  animation-name: bodytextEntry;
+  animation-duration: 1s;
+}
+
 section img {
   border: 15px solid #FFF;
   box-shadow: 0 0 10px 10px #DDD;
@@ -88,4 +93,13 @@ blockquote span {
   outline: none;
   border: none;
   cursor: pointer;
+}
+
+@keyframes bodytextEntry {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
