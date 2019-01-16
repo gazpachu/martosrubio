@@ -1,0 +1,15 @@
+.curriculum {
+  text-align: left;
+}
+
+.curriculum li {
+  line-height: 20px;
+}
+
+.curriculum .photos {
+  margin-top: 50px;
+  text-align: center;
+}
+
+.curriculum .photos img { margin-bottom: 10px; }
+.curriculum .photos div { margin-bottom: 50px; }
