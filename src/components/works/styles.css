@@ -2,3 +2,9 @@
   width: 100%;
   margin: 10px 0 40px 0;
 }
+
+@media (max-width: 600px) {
+  .works img {
+    border-width: 5px;
+  }
+}
