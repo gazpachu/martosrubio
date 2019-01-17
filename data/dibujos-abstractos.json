@@ -1,0 +1,25 @@
+{
+  "title": "Dibujos abstractos",
+  "works": [
+    {
+      "title": "Giros",
+      "meta": "Mayo 2010. 50cm x 70cm. Acuarela, rotuladores, lápiz pastel y lápiz conté",
+      "img": "dibujo_rojo"
+    },
+    {
+      "title": "Abstracción geometrica VII",
+      "meta": "2018. 50cm x 70cm. Acuarela, tizas, lápiz pastel y lápiz conté",
+      "img": "abstraccion-geometrica-7"
+    },
+    {
+      "title": "Abstracción geometrica VIII",
+      "meta": "2015. 50cm x 70cm. Acuarela, lápiz pastel y lápiz conté",
+      "img": "abstraccion-geometrica-8"
+    },
+    {
+      "title": "Abstracción geometrica IX",
+      "meta": "2015. 50cm x 70cm. Acuarela y lápiz pastel",
+      "img": "abstraccion-geometrica-9"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "title": "Óleos abstractos",
+  "works": [
+    {
+      "title": "Abstracción geometrica I",
+      "meta": "2017. 136cm x 114cm. Óleo",
+      "img": "abstraccion-geometrica-1"
+    }, {
+      "title": "Abstracción geometrica II",
+      "meta": "2017. 100cm x 100cm. Óleo",
+      "img": "abstraccion-geometrica-2"
+    }, {
+      "title": "Abstracción geometrica III",
+      "meta": "2017. 146cm x 114cm. Óleo",
+      "img": "abstraccion-geometrica-3"
+    }, {
+      "title": "Abstracción geometrica IV",
+      "meta": "2018. 146cm x 114cm. Óleo",
+      "img": "abstraccion-geometrica-4"
+    }, {
+      "title": "Abstracción geometrica V",
+      "meta": "2018. 100cm x 114cm. Óleo",
+      "img": "abstraccion-geometrica-5"
+    }, {
+      "title": "Abstracción geometrica VI",
+      "meta": "2018. 136cm x 114cm. Óleo",
+      "img": "abstraccion-geometrica-6"
+    }
+  ]
+}
