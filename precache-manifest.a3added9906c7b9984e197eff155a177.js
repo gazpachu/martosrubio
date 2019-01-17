@@ -4,8 +4,8 @@ self.__precacheManifest = [
     "url": "/static/media/expo-blauart.c72777d4.jpg"
   },
   {
-    "revision": "1a2014b81863ce004242",
-    "url": "/static/css/main.d3446e6f.chunk.css"
+    "revision": "70a617d4c7d57ce9d942",
+    "url": "/static/css/main.05d65878.chunk.css"
   },
   {
     "revision": "3ea072facea8a55c8ba8",
@@ -32,8 +32,8 @@ self.__precacheManifest = [
     "url": "/static/media/expo-ravi-cafe.9c5a79ed.jpg"
   },
   {
-    "revision": "1a2014b81863ce004242",
-    "url": "/static/js/main.1a2014b8.chunk.js"
+    "revision": "70a617d4c7d57ce9d942",
+    "url": "/static/js/main.70a617d4.chunk.js"
   },
   {
     "revision": "0d454f53d351627cebab0d5ac098a788",
@@ -60,7 +60,7 @@ self.__precacheManifest = [
     "url": "/static/media/estudio-6.e1916698.jpg"
   },
   {
-    "revision": "f35609a329396f38ec18e12fa4389a14",
+    "revision": "81df76c5b4f21eaffd89e5c1cabce7fc",
     "url": "/index.html"
   }
 ];
