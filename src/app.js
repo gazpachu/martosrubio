@@ -19,6 +19,8 @@ class App extends Component {
   }
 
   render() {
+    const year = new Date().getFullYear();
+
     return (
       <div className="app" ref={(re) => { this.myRef = re; }}>
         <Router>
@@ -50,6 +52,7 @@ class App extends Component {
             className="scroll-btn"
             onClick={() => this.myRef.scrollIntoView({ block: 'start', behavior: 'smooth' })}
           />}
+        <footer>Milagros Martos Rubio © {year}. Todos los derechos reservados / All rights reserved</footer>
       </div>
     );
   }

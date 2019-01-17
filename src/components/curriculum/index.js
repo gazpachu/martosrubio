@@ -50,6 +50,10 @@ const Curriculum = props => {
           <img src={Otras3} alt="Mi estudio" />
           <div>Mi estudio</div>
         </div>
+
+        <blockquote>
+          “Mila, tu con una línea haces un brazo de carne”<span>Antonio López</span>
+        </blockquote>
       </section>
     </Fragment>
   );
