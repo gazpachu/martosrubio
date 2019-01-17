@@ -1,0 +1,35 @@
+{
+  "title": "Dibujos expresionistas",
+  "works": [
+    {
+      "title": "Azules y ocres",
+      "meta": "Mayo 2015. 50cm x 70cm. Acuarela, lápiz pastel y tempera",
+      "img": "acuarela_2015-1"
+    },
+    {
+      "title": "Giros",
+      "meta": "Mayo 2010. 50cm x 70cm. Acuarela, rotuladores, lápiz pastel y lápiz conté",
+      "img": "dibujo_rojo"
+    },
+    {
+      "title": "Cuerpo vegetal",
+      "meta": "Abril 2010. 60cm x 70cm. Acuarela, pastel y lápiz conté",
+      "img": "cuadro_33"
+    },
+    {
+      "title": "Platanera en ocres",
+      "meta": "Marzo 2010. 60cm x 70cm. Acuarela, pastel y lápiz conté",
+      "img": "cuadro_35"
+    },
+    {
+      "title": "Fragmento de platanera II",
+      "meta": "Febrero 2010. 60cm x 70cm. Acuarela, pastel y lápiz conté",
+      "img": "cuadro_37"
+    },
+    {
+      "title": "Tronco",
+      "meta": "Noviembre 1994. 60cm x 70cm. Acuarela, lápices de colores y lápiz conté",
+      "img": "carboncillo_6"
+    }
+  ]
+}
