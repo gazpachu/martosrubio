@@ -2,6 +2,7 @@ import React, { Component, Fragment } from 'react';
 import './app.css';
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import Logo from './assets/logo.png';
+import Home from './assets/home.jpg';
 import Curriculum from './components/curriculum';
 import Works from './components/works';
 import debounce from 'lodash-es/debounce';
@@ -47,6 +48,7 @@ class App extends Component {
             <Route path="/retratos" component={Works} />
           </Fragment>
         </Router>
+        <img src={Home} alt="estudio" width="100%" className="home" />
         {this.state.scrollBtn &&
           <button
             className="scroll-btn"
