@@ -3,6 +3,8 @@ import './styles.css';
 import Otras1 from '../../assets/otras_1.jpg';
 import Otras2 from '../../assets/otras_2.jpg';
 import Otras3 from '../../assets/otras_3.jpg';
+import ExpoRavi from '../../assets/expo-ravi-cafe.jpg';
+import ExpoBlauArt from '../../assets/expo-blauart.jpg';
 
 const Curriculum = props => {
   return (
@@ -49,6 +51,10 @@ const Curriculum = props => {
           <div>Yo con el ordenador</div>
           <img src={Otras3} alt="Mi estudio" />
           <div>Mi estudio</div>
+          <img src={ExpoRavi} alt="Exposición de dibujos y pinturas hasta el 3 de Diciembre de 2016" />
+          <div>Exposición de dibujos y pinturas hasta el 3 de Diciembre de 2016. El color, la línea y la mancha. Distintas miradas</div>
+          <img src={ExpoBlauArt} alt="Exposición de dibujos y pinturas hasta el 3 de Diciembre de 2016" />
+          <div>Exposición “Del.Verde.Al.Carmesí”. Desde el Viernes, 1 de Abril a las 19:00, hasta el 26 de Abril a las 22:00</div>
         </div>
 
         <blockquote>
