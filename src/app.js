@@ -2,8 +2,9 @@ import React, { Component, Fragment } from 'react';
 import './app.css';
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import Logo from './assets/logo.png';
-import Home from './assets/home.jpg';
 import Curriculum from './components/curriculum';
+import Home from './components/home';
+import Estudio from './components/estudio';
 import Works from './components/works';
 import debounce from 'lodash-es/debounce';
 
@@ -26,29 +27,36 @@ class App extends Component {
       <div className="app" ref={(re) => { this.myRef = re; }}>
         <Router>
           <Fragment>
-            <Link to="/"><img src={Logo} title="Go back to the homepage" alt="logo" /></Link>
-            <p className="meta">
-              mila [@] martosrubio.com | <a href="https://www.instagram.com/martosrubio/">Instagram</a>
-            </p>
-            <ul className="nav">
-              <li><Link to="/dibujos-expresionistas">Dibujos expresionistas</Link></li>
-              <li><Link to="/dibujos-realistas">Dibujos realistas</Link></li>
-              <li><Link to="/oleos-expresionistas">Óleos expresionistas</Link></li>
-              <li><Link to="/oleos-realistas">Óleos realistas</Link></li>
-              <li><Link to="/retratos">Retratos</Link></li>
-              <li><Link to="/curriculum">Curriculum</Link></li>
-            </ul>
+            <header>
+              <Link to="/"><img src={Logo} title="Go back to the homepage" alt="logo" /></Link>
+              <p className="meta">
+                mila [@] martosrubio.com | <a href="https://www.instagram.com/martosrubio/">Instagram</a>
+              </p>
+              <ul className="nav">
+                <li><Link to="/dibujos-expresionistas">Dibujos expresionistas</Link></li>
+                <li><Link to="/dibujos-realistas">Dibujos realistas</Link></li>
+                <li><Link to="/dibujos-abstractos">Dibujos abstractos</Link></li>
+                <li><Link to="/oleos-expresionistas">Óleos expresionistas</Link></li>
+                <li><Link to="/oleos-realistas">Óleos realistas</Link></li>
+                <li><Link to="/oleos-abstractos">Óleos abstractos</Link></li>
+                <li><Link to="/curriculum">Curriculum</Link></li>
+                <li><Link to="/estudio">Estudio</Link></li>
+              </ul>
+            </header>
 
-            { /*<Route exact path="/" component={Home} /> */}
-            <Route path="/curriculum" component={Curriculum} />
-            <Route path="/dibujos-expresionistas" component={Works} />
-            <Route path="/dibujos-realistas" component={Works} />
-            <Route path="/oleos-expresionistas" component={Works} />
-            <Route path="/oleos-realistas" component={Works} />
-            <Route path="/retratos" component={Works} />
+            <main>
+              <Route exact path="/" component={Home} />
+              <Route path="/curriculum" component={Curriculum} />
+              <Route path="/dibujos-expresionistas" component={Works} />
+              <Route path="/dibujos-realistas" component={Works} />
+              <Route path="/dibujos-abstractos" component={Works} />
+              <Route path="/oleos-expresionistas" component={Works} />
+              <Route path="/oleos-realistas" component={Works} />
+              <Route path="/oleos-abstractos" component={Works} />
+              <Route path="/estudio" component={Estudio} />
+            </main>
           </Fragment>
         </Router>
-        <img src={Home} alt="estudio" width="100%" className="home" />
         {this.state.scrollBtn &&
           <button
             className="scroll-btn"

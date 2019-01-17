@@ -19,6 +19,23 @@ body {
   margin: 0 auto;
 }
 
+@media (min-width: 900px) {
+  .app {
+    max-width: initial;
+  }
+
+  header {
+    width: 20%;
+    position: fixed;
+  }
+
+  main {
+    width: 70%;
+    float: left;
+    margin-left: 28%;
+  }
+}
+
 .home {
   border: 5px solid #333;
   margin-bottom: 30px;
