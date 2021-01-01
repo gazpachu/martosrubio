@@ -1,15 +1,15 @@
 self.__precacheManifest = [
   {
-    "revision": "93b80443d0f300c5f6d0",
-    "url": "/static/css/main.db022d18.chunk.css"
+    "revision": "c72777d49291d6414435528261357f8b",
+    "url": "/static/media/expo-blauart.c72777d4.jpg"
   },
   {
-    "revision": "93b80443d0f300c5f6d0",
-    "url": "/static/js/main.93b80443.chunk.js"
+    "revision": "619539995a61e9d93cf1",
+    "url": "/static/css/main.20134910.chunk.css"
   },
   {
-    "revision": "2cdff6f687effce18fa5",
-    "url": "/static/js/1.2cdff6f6.chunk.js"
+    "revision": "9c2899a977ebe37de400",
+    "url": "/static/js/1.9c2899a9.chunk.js"
   },
   {
     "revision": "229c360febb4351a89df",
@@ -32,8 +32,8 @@ self.__precacheManifest = [
     "url": "/static/media/expo-ravi-cafe.9c5a79ed.jpg"
   },
   {
-    "revision": "c72777d49291d6414435528261357f8b",
-    "url": "/static/media/expo-blauart.c72777d4.jpg"
+    "revision": "619539995a61e9d93cf1",
+    "url": "/static/js/main.61953999.chunk.js"
   },
   {
     "revision": "0d454f53d351627cebab0d5ac098a788",
@@ -60,7 +60,7 @@ self.__precacheManifest = [
     "url": "/static/media/estudio-6.e1916698.jpg"
   },
   {
-    "revision": "ab8bb090ba0266865484c45d1acfbfe3",
+    "revision": "7c8de487a52509e0f0ae285b4e51891c",
     "url": "/index.html"
   }
 ];
