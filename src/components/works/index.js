@@ -6,19 +6,21 @@ class Works extends Component {
     super(props);
 
     this.state = {
-      data: null
+      data: null,
+      filename: ''
     };
   }
 
   componentDidMount() {
-    const file = this.props.location.pathname.substring(1, this.props.location.pathname.length);
-    fetch(`/data/${file}.json`)
+    const filename = this.props.location.pathname.substring(1, this.props.location.pathname.length);
+    this.setState({ filename });
+    fetch(`/data/${filename}.json`)
       .then(response => response.json())
       .then(data => this.setState({ data }));
   }
 
   render() {
-    const { data } = this.state;
+    const { data, filename } = this.state;
 
     return (
       <Fragment>
@@ -28,7 +30,7 @@ class Works extends Component {
             <div className="item" key={item.title}>
               <h2>{item.title}</h2>
               <p>{item.meta}</p>
-              <img src={`/photos/${item.img}.jpg`} alt={item.title} />
+              <img src={`/photos/${filename}/${item.img}.jpg`} alt={item.title} />
             </div>
           ))}
         </section>
