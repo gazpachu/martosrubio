@@ -1,11 +1,7 @@
 import React, { Component, Fragment } from 'react';
 import './app.css';
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
-import Curriculum from './components/curriculum';
-import Home from './components/home';
-import Estudio from './components/estudio';
-import Works from './components/works';
-import Exhibits from './components/exhibits';
+import { Routes } from './router';
 import debounce from 'lodash-es/debounce';
 
 class App extends Component {
@@ -44,18 +40,8 @@ class App extends Component {
                 <li><Link to="/exposiciones">Exposiciones</Link></li>
               </ul>
             </header>
-
             <main>
-              <Route exact path="/" component={Home} />
-              <Route path="/curriculum" component={Curriculum} />
-              <Route path="/dibujos-expresionistas" component={Works} />
-              <Route path="/dibujos-realistas" component={Works} />
-              <Route path="/dibujos-abstractos" component={Works} />
-              <Route path="/oleos-expresionistas" component={Works} />
-              <Route path="/oleos-realistas" component={Works} />
-              <Route path="/oleos-abstractos" component={Works} />
-              <Route path="/estudio" component={Estudio} />
-              <Route path="/exposiciones" component={Exhibits} />
+              <Routes />
             </main>
           </Fragment>
         </Router>

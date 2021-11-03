@@ -12,12 +12,22 @@ class Works extends Component {
     };
   }
 
+  loadData(props) {
+    const filename = props.location.pathname.substring(1, props.location.pathname.length);
+      this.setState({ filename });
+      fetch(`/data/${filename}.json`)
+        .then(response => response.json())
+        .then(data => this.setState({ data }));
+  }
+
   componentDidMount() {
-    const filename = this.props.location.pathname.substring(1, this.props.location.pathname.length);
-    this.setState({ filename });
-    fetch(`/data/${filename}.json`)
-      .then(response => response.json())
-      .then(data => this.setState({ data }));
+    this.loadData(this.props);
+  }
+
+  componentWillReceiveProps(nextProps) {
+    if (this.props.location.pathname !== nextProps.location.pathname) {
+      this.loadData(nextProps); 
+    }
   }
 
   render() {
@@ -29,8 +39,8 @@ class Works extends Component {
       <Fragment>
         <h1>{data.title}</h1>
         <section className="works">
-          {data.works.map(item => (
-            <div className="item" key={item.title}>
+          {data.works.map((item, i) => (
+            <div className="item" key={`${item.title} + ${i}`}>
               <h2>{item.title}</h2>
               <p>{item.meta}</p>
               <img src={`/photos/${filename}/${item.img}.jpg`} alt={item.title} />
