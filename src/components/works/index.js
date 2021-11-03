@@ -1,4 +1,5 @@
 import React, { Component, Fragment } from 'react';
+import { Helmet } from 'react-helmet';
 import './styles.css';
 
 class Works extends Component {
@@ -22,11 +23,13 @@ class Works extends Component {
   render() {
     const { data, filename } = this.state;
 
+    if (!data) return null;
+
     return (
       <Fragment>
-        <h1>{data && data.title}</h1>
+        <h1>{data.title}</h1>
         <section className="works">
-          {data && data.works.map(item => (
+          {data.works.map(item => (
             <div className="item" key={item.title}>
               <h2>{item.title}</h2>
               <p>{item.meta}</p>
@@ -34,6 +37,10 @@ class Works extends Component {
             </div>
           ))}
         </section>
+        <Helmet>
+          <title>{`${data.title} - Milagros Martos Rubio`}</title>
+          <meta name="description" content={`${data.title}`}></meta>
+        </Helmet>
       </Fragment>
     );
   }

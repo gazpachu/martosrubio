@@ -1,9 +1,6 @@
 import React, { Fragment } from "react";
+import { Helmet } from 'react-helmet';
 import "./styles.css";
-import Otras1 from "../../assets/otras_1.jpg";
-import Otras2 from "../../assets/otras_2.jpg";
-import ExpoRavi from "../../assets/expo-ravi-cafe.jpg";
-import ExpoBlauArt from "../../assets/expo-blauart.jpg";
 
 const Curriculum = (props) => {
   return (
@@ -121,12 +118,12 @@ const Curriculum = (props) => {
         </ul>
 
         <div className="photos">
-          <img src={Otras1} alt="En la facultad de Bellas Artes" />
+          <img src="/photos/other/otras_1.jpg" alt="En la facultad de Bellas Artes" />
           <div>En la facultad de Bellas Artes</div>
-          <img src={Otras2} alt="Yo con el ordenador" />
+          <img src="/photos/other/otras_2.jpg" alt="Yo con el ordenador" />
           <div>Yo con el ordenador</div>
           <img
-            src={ExpoRavi}
+            src="/photos/other/expo-ravi-cafe.jpg"
             alt="Exposición de dibujos y pinturas hasta el 3 de Diciembre de 2016"
           />
           <div>
@@ -134,7 +131,7 @@ const Curriculum = (props) => {
             color, la línea y la mancha. Distintas miradas
           </div>
           <img
-            src={ExpoBlauArt}
+            src="/photos/other/expo-blauart.jpg"
             alt="Exposición de dibujos y pinturas hasta el 3 de Diciembre de 2016"
           />
           <div>
@@ -148,6 +145,10 @@ const Curriculum = (props) => {
           <span>Antonio López</span>
         </blockquote>
       </section>
+      <Helmet>
+        <title>Curriculum - Milagros Martos Rubio</title>
+        <meta name="description" content="Curriculum vitae"></meta>
+      </Helmet>
     </Fragment>
   );
 };

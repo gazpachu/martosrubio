@@ -1,11 +1,11 @@
 import React, { Component, Fragment } from 'react';
 import './app.css';
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
-import Logo from './assets/logo.png';
 import Curriculum from './components/curriculum';
 import Home from './components/home';
 import Estudio from './components/estudio';
 import Works from './components/works';
+import Exhibits from './components/exhibits';
 import debounce from 'lodash-es/debounce';
 
 class App extends Component {
@@ -28,7 +28,7 @@ class App extends Component {
         <Router>
           <Fragment>
             <header>
-              <Link to="/"><img src={Logo} title="Go back to the homepage" alt="logo" /></Link>
+              <Link to="/"><img src="/logo.png" title="Go back to the homepage" alt="logo" /></Link>
               <p className="meta">
                 mila [@] martosrubio.com | <a href="https://www.instagram.com/martosrubio/">Instagram</a>
               </p>
@@ -41,6 +41,7 @@ class App extends Component {
                 <li><Link to="/oleos-abstractos">Óleos abstractos</Link></li>
                 <li><Link to="/curriculum">Curriculum</Link></li>
                 <li><Link to="/estudio">Estudio</Link></li>
+                <li><Link to="/exposiciones">Exposiciones</Link></li>
               </ul>
             </header>
 
@@ -54,6 +55,7 @@ class App extends Component {
               <Route path="/oleos-realistas" component={Works} />
               <Route path="/oleos-abstractos" component={Works} />
               <Route path="/estudio" component={Estudio} />
+              <Route path="/exposiciones" component={Exhibits} />
             </main>
           </Fragment>
         </Router>
