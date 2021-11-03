@@ -1,6 +1,6 @@
 import React, { Component, Fragment } from 'react';
 import './app.css';
-import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Link } from "react-router-dom";
 import { Routes } from './router';
 import debounce from 'lodash-es/debounce';
 
